@@ -1,8 +1,6 @@
 # Assignment-of-Introduction-to-Python
 
-Instructions:
 
-#Basic Calculator Program
 
 def calculator():
     try:
