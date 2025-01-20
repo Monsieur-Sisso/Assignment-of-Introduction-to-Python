@@ -63,3 +63,49 @@ gaming_phone.play_game("Genshin Impact")
 print(camera_phone)
 camera_phone.power_on()
 camera_phone.take_photo()
+
+
+question 2
+
+
+class Vehicle:
+    def __init__(self, name):
+        self.name = name
+
+    def move(self):
+        raise NotImplementedError("Subclasses must implement the move() method.")
+
+
+class Car(Vehicle):
+    def move(self):
+        print(f"{self.name} is driving 🚗")
+
+
+class Plane(Vehicle):
+    def move(self):
+        print(f"{self.name} is flying ✈️")
+
+
+class Boat(Vehicle):
+    def move(self):
+        print(f"{self.name} is sailing 🚤")
+
+
+class Bicycle(Vehicle):
+    def move(self):
+        print(f"{self.name} is pedaling 🚲")
+
+
+def demonstrate_movement(vehicles):
+    for vehicle in vehicles:
+        vehicle.move()
+
+
+car = Car("Tesla Model S")
+plane = Plane("Boeing 747")
+boat = Boat("Yacht")
+bicycle = Bicycle("Mountain Bike")
+
+vehicles = [car, plane, boat, bicycle]
+demonstrate_movement(vehicles)
+
